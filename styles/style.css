@@ -41,6 +41,8 @@ ol {
 }
 
 .content {
+  width: 1140px;
+  height: 534px;
   display: flex;
   gap: 30px;
   align-items: flex-end
@@ -70,7 +72,6 @@ ol {
 
 .content__video-card-thumbnail {
   width: 193px;
-
   height: 103px;
 }
 
@@ -106,8 +107,8 @@ li:not(:last-child) {
 }
 
 .content__video-card-description-container {
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 101px;
 }
 
 .search-form__fieldset-title {
@@ -121,7 +122,7 @@ color: #fff;
   font-family:Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
-  line-height: 94%;
+  line-height: 91%;
   text-transform: uppercase;
 }
 
@@ -207,7 +208,7 @@ input {
   border-bottom: 1px solid #fff;
   appearance: none;
   outline: 0;
-
+  text-decoration: none;
 }
 
 .search-form__checkbox +.search-form__pseudo-checkbox {
@@ -283,10 +284,7 @@ input {
 .content__card-link:focus-visible {
   outline: 1px solid #fff;
 }
-.search-form__label-text:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
+
 
 .content__card-link:hover {
   text-decoration: underline;
@@ -295,6 +293,9 @@ input {
 
 }
 
+.search-form__label:has(input[type="checkbox"]:hover) {
+  text-decoration: underline;
+}
 
 .content__card-link:active {
   background-color:#545050;
