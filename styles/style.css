@@ -42,7 +42,6 @@ ol {
 
 .content {
   width: 1140px;
-  height: 534px;
   display: flex;
   gap: 30px;
   align-items: flex-end
@@ -107,8 +106,9 @@ li:not(:last-child) {
 }
 
 .content__video-card-description-container {
-  width: 200px;
-  height: 101px;
+  flex-basis: 0;
+  flex-grow: 1;
+  overflow: hidden;
 }
 
 .search-form__fieldset-title {
@@ -154,6 +154,7 @@ padding-bottom: 8px;
 text-overflow: ellipsis;
 white-space: nowrap;
 overflow: hidden;
+max-width: 200px;
 }
 
 .content__video-card-description {
